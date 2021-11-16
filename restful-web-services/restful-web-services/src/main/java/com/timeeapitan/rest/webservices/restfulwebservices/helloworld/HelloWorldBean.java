@@ -1,4 +1,4 @@
-package com.timeeapitan.rest.webservices.restfulwebservices;
+package com.timeeapitan.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
     private String message;

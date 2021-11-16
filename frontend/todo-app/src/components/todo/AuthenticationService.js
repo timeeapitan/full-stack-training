@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class AuthenticationService extends Component {
   registerSuccessfulLogin(username, password) {
@@ -17,6 +17,15 @@ class AuthenticationService extends Component {
     }
 
     return true;
+  }
+
+  getLoggedInUserName() {
+    let user = sessionStorage.getItem('authenticatedUser');
+    if (user === null) {
+      return '';
+    }
+
+    return user;
   }
 }
 
